@@ -1,4 +1,4 @@
-package org.javabrains.lambda;
+package org.mgupta.lambda;
 
 import java.util.Arrays;
 import java.util.List;

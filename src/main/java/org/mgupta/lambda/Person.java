@@ -1,4 +1,4 @@
-package org.javabrains.lambda;
+package org.mgupta.lambda;
 
 /**
  * Created by Mayank on 2/6/2016.
