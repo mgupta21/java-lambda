@@ -1,4 +1,4 @@
-package org.mgupta.streams;
+package lambda;
 
 import java.util.Random;
 

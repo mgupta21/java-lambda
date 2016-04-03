@@ -1,4 +1,4 @@
-package org.mgupta.lambda;
+package org.mgupta.streams;
 
 /**
  * Created by Mayank on 2/6/2016.

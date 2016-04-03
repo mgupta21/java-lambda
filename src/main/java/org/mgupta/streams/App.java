@@ -1,4 +1,4 @@
-package org.mgupta.lambda;
+package org.mgupta.streams;
 
 import java.util.Arrays;
 import java.util.List;

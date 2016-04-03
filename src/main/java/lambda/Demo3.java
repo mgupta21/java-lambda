@@ -1,4 +1,4 @@
-package org.mgupta.streams;
+package lambda;
 
 /**
  * Created by Mayank on 4/3/2016.
@@ -11,7 +11,7 @@ public class Demo3 {
         Tradable<Trade> bigTradeLambda = (trade) -> trade.isBigTrade();  // <argument> -> <Body>
         Tradable<Trade> cmeTradeLambda = (trade) -> trade.getName().equals("CME");
 
-        Trade t1 = new Trade("GOOGLE", true);
+        Trade t1 = new Trade("GOOGLE", 5000);
         Trade t2 = new Trade("CME");
 
         System.out.println("Trade Name : " + t1.getName());
@@ -33,29 +33,6 @@ public class Demo3 {
 
     public static boolean methodAcceptingTradable(Trade trade, Tradable tradable) {
         return tradable.check(trade);
-    }
-
-}
-
-class Trade {
-    boolean isBigTrade = false;
-    String name;
-
-    Trade(String name, boolean isBigTrade) {
-        this.isBigTrade = isBigTrade;
-        this.name = name;
-    }
-
-    Trade(String name) {
-        this.name = name;
-    }
-
-    public boolean isBigTrade() {
-        return isBigTrade;
-    }
-
-    public String getName() {
-        return name;
     }
 
 }
