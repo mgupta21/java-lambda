@@ -7,7 +7,7 @@ public class Demo3 {
 
     public static void main(String[] args) {
 
-        // Step 2 : Define lambda expressions or body of interface method.
+        // Step 2 : Define lambda expressions or body of interface method
         Tradable<Trade> bigTradeLambda = (trade) -> trade.isBigTrade();  // <argument> -> <Body>
         Tradable<Trade> cmeTradeLambda = (trade) -> trade.getName().equals("CME");
 
@@ -19,7 +19,7 @@ public class Demo3 {
         System.out.println("Is CME ? " + cmeTradeLambda.check(t1));
         System.out.println("Is Big Trade ? " + bigTradeLambda.check(t1));
 
-        // Step 3B : Call lambda expressions via method
+        // Step 3B : Call lambda expressions on object via a method
         System.out.println("Trade Name : " + t2.getName());
         System.out.println("Is CME ? " + methodAcceptingTradable(t2, cmeTradeLambda));
         System.out.println("Is Big Trade ? " + methodAcceptingTradable(t2, bigTradeLambda));
