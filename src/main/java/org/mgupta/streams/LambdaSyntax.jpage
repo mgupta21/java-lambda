@@ -1,0 +1,21 @@
+(input argument) -> body
+
+// 1. Lambda expression that takes single argument and return nothing. Type and parenthesis are optional for single argument
+(String name) -> System.out.println("Hello, " + name);
+(name) -> System.out.println("Hello, " + name);
+name -> System.out.println("Hello, " + name);
+
+// 2. Lambda expression that takes one argument a return String. Return statement is implicit
+// Type of input statement is implicit and is derived from target i.e. input argument of interface method
+name -> "Hello, " + name;
+
+// 3. Lambda expression that takes no argument and return nothing
+() -> autoPilot();
+Runnable runnable = () -> autoPilot();
+
+// 4. Lambda expression that takes 2 arguments and return object. Return is explicit when lambda expression has block of code
+(Trade t, PricingSkewAlgo algo) -> {
+    algo.applyPricingSkew(t);
+    persistingTrade(t);
+    return t;
+}

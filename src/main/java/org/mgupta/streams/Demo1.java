@@ -17,6 +17,8 @@ public class Demo1 {
         while (count-- > 0) {
             Random random = new Random();
             int x = random.nextInt(5);
+            // 2nd argument of testGreeting method is a lambda expression
+            // Since body is a single line statement the return is implicit. If lambda expression had block of code then a explicit return is required.
             demo.testGreeting(names[x], a -> !a.isEmpty() ? "Howdy " + a + "!" : "Did you forget something?");
         }
     }
@@ -26,6 +28,6 @@ public class Demo1 {
     }
 
     interface Greeting {
-        String sayHello(String str);
+        String sayHello(String str); // Syntax of lambda expression : (input arguments) -> body
     }
 }

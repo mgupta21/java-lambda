@@ -28,7 +28,7 @@ public class Demo3 {
 
     // Step 1 : Define Interface with single method
     interface Tradable<Trade> {
-        boolean check(Trade t);
+        boolean check(Trade t); // The lambda expression should pass an argument and return boolean
     }
 
     public static boolean methodAcceptingTradable(Trade trade, Tradable tradable) {
