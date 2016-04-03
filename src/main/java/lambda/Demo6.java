@@ -3,10 +3,6 @@ package lambda;
 import java.util.ArrayList;
 import java.util.List;
 
-interface IMovie {
-    boolean check(Movie m);
-}
-
 /**
  * Created by Mayank on 4/3/2016.
  */
@@ -47,6 +43,10 @@ public class Demo6 {
         return m.isComedy;
     }
 
+}
+
+interface IMovie {
+    boolean check(Movie m);
 }
 
 class Movie {
