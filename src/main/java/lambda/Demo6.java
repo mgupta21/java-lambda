@@ -45,10 +45,6 @@ public class Demo6 {
 
 }
 
-interface IMovie {
-    boolean check(Movie m);
-}
-
 class Movie {
     int rank;
     String name;
@@ -59,4 +55,8 @@ class Movie {
         this.name = name;
         this.isComedy = isComedy;
     }
+}
+interface IMovie {
+    boolean check(Movie m);
+
 }
