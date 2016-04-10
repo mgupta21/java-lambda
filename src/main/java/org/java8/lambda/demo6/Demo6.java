@@ -1,4 +1,4 @@
-package lambda.demo6;
+package org.java8.lambda.demo6;
 
 import java.util.ArrayList;
 import java.util.List;

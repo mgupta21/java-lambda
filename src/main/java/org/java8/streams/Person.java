@@ -1,4 +1,4 @@
-package org.mgupta.streams;
+package org.java8.streams;
 
 /**
  * Created by Mayank on 2/6/2016.

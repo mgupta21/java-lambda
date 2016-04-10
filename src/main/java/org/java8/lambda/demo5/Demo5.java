@@ -1,7 +1,7 @@
-package lambda.demo5;
+package org.java8.lambda.demo5;
 
-import lambda.Status;
-import lambda.Trade;
+import org.java8.lambda.Status;
+import org.java8.lambda.Trade;
 
 import java.util.ArrayList;
 import java.util.List;

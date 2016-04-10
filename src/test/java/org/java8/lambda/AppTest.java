@@ -1,4 +1,4 @@
-package org.mgupta.lambda;
+package org.java8.lambda;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

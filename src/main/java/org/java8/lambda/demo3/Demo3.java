@@ -1,6 +1,6 @@
-package lambda.demo3;
+package org.java8.lambda.demo3;
 
-import lambda.Trade;
+import org.java8.lambda.Trade;
 
 /**
  * Created by Mayank on 4/3/2016.

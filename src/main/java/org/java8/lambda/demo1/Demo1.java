@@ -1,4 +1,4 @@
-package lambda.demo1;
+package org.java8.lambda.demo1;
 
 import java.util.Random;
 

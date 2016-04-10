@@ -1,4 +1,4 @@
-package lambda.demo7;
+package org.java8.lambda.demo7;
 
 /**
  * Created by Mayank on 4/3/2016.
