@@ -1,4 +1,7 @@
-package lambda;
+package lambda.demo5;
+
+import lambda.Status;
+import lambda.Trade;
 
 import java.util.ArrayList;
 import java.util.List;

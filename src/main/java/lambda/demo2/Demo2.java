@@ -1,4 +1,4 @@
-package lambda;
+package lambda.demo2;
 
 import java.util.concurrent.Callable;
 

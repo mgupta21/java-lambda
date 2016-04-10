@@ -1,4 +1,6 @@
-package lambda;
+package lambda.demo3;
+
+import lambda.Trade;
 
 /**
  * Created by Mayank on 4/3/2016.

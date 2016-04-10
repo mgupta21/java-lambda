@@ -1,9 +1,5 @@
 package lambda;
 
-enum Status {
-    OPEN, CLOSED, PENDING
-}
-
 /**
  * Created by Mayank on 4/3/2016.
  */
@@ -12,17 +8,17 @@ public class Trade {
     private int quantity;
     private Status status;
 
-    Trade(String name, int quantity, Status status) {
+    public Trade(String name, int quantity, Status status) {
         this.quantity = quantity;
         this.name = name;
         this.status = status;
     }
 
-    Trade(String name, int quantity) {
+    public Trade(String name, int quantity) {
         this(name, quantity, Status.OPEN);
     }
 
-    Trade(String name) {
+    public Trade(String name) {
         this(name, 0);
     }
 

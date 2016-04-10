@@ -1,4 +1,4 @@
-package lambda;
+package lambda.demo0;
 
 /**
  * Created by Mayank on 4/10/2016.
