@@ -12,7 +12,7 @@ import java.util.function.Predicate;
  */
 
 // Test predicates
-public class Demo6 {
+public class PredicateFunctionalInterface {
 
     public static void main(String[] args) {
 
@@ -21,7 +21,7 @@ public class Demo6 {
         Predicate<Trade> bigTrade = t -> t.isBigTrade();
 
         // Predicate derived from other predicate
-        /* Logical AND and OR */
+        /* LOGICAL AND and OR */
         Predicate<Trade> openOrCanceledTrade = openTrade.or(canceledTrade);
         Predicate<Trade> canceledAndBigTrade = canceledTrade.and(bigTrade);
 

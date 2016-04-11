@@ -1,5 +1,7 @@
 package org.java8.lambda.demo6;
 
+import org.java8.datamodel.movie.Movie;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,6 +11,10 @@ import java.util.List;
 // Method References : referencing an existing method from lambda expression
 // MR are shorthand to lambda expressions, used to make code more readable
 public class Demo6 {
+
+    interface IMovie {
+        boolean check(Movie m);
+    }
 
     public static void main(String[] args) {
 
@@ -24,7 +30,7 @@ public class Demo6 {
         movies.add(new Movie(123, "KNPH", false));
 
         movies.forEach(m -> {
-            System.out.println("****\nMovie Name : " + m.name);
+            System.out.println("****\nMovie Name : " + m.getName());
             System.out.println("Is Classic Movie ? : " + movieClassicLambda.check(m));
             System.out.println("Is Top 10 Movie ? : " + movieTop10Lambda.check(m));
             System.out.println("Is Comedy Movie ? : " + movieComedyLambda.check(m) + "\n");
@@ -32,31 +38,15 @@ public class Demo6 {
     }
 
     public static boolean isClassic(Movie m) {
-        return m.rank <= 100;
+        return m.getRank() <= 100;
     }
 
     public static boolean isTop10(Movie m) {
-        return m.rank <= 10;
+        return m.getRank() <= 10;
     }
 
     public static boolean isComedy(Movie m) {
-        return m.isComedy;
+        return m.isComedy();
     }
-
-}
-
-class Movie {
-    int rank;
-    String name;
-    boolean isComedy;
-
-    Movie(int rank, String name, boolean isComedy) {
-        this.rank = rank;
-        this.name = name;
-        this.isComedy = isComedy;
-    }
-}
-interface IMovie {
-    boolean check(Movie m);
 
 }
