@@ -46,4 +46,12 @@ public class Trade {
         return status;
     }
 
+    @Override
+    public String toString() {
+        return "Trade{" +
+                "name='" + name + '\'' +
+                ", quantity=" + quantity +
+                ", status=" + status +
+                '}';
+    }
 }
