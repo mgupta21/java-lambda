@@ -18,4 +18,8 @@ public class MovieUtil {
         movies.add(new Movie(123, "KNPH", false));
         return movies;
     }
+
+    public static Movie createMovie() {
+        return new Movie(3, "TITANIC", false);
+    }
 }

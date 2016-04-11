@@ -1,6 +1,8 @@
 package org.java8.interfaces.demo7;
 
 import org.java8.datamodel.movie.Movie;
+import org.java8.util.MovieUtil;
+
 import java.util.function.Consumer;
 
 /**
@@ -36,7 +38,7 @@ public class ConsumerFuncionalInterface {
 
     public static void main(String[] args) {
 
-        Movie m = new Movie(3, "TITANIC", false);
+        Movie m = MovieUtil.createMovie();
 
         testConsumer(m);
         testConsumerAndThen(m);

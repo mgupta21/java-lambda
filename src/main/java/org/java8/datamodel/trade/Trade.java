@@ -4,6 +4,7 @@ package org.java8.datamodel.trade;
  * Created by Mayank on 4/3/2016.
  */
 public class Trade {
+
     private String name;
     private int quantity;
     private Status status;

@@ -15,6 +15,10 @@ public class Movie {
         this.isComedy = isComedy;
     }
 
+    public Movie(String name) {
+        this(Integer.MAX_VALUE, name, false);
+    }
+
     public int getRank() {
         return rank;
     }
