@@ -29,9 +29,9 @@ public class Demo1 {
 }
 
 interface Employee {
+
     // abstract method
     Employee find(String id);
-
 
     // default method - Java 8 allows concrete implementation
     default boolean isExec(String id) {
@@ -42,7 +42,6 @@ interface Employee {
     static String getDefaultCountry() {
         return "USA";
     }
-
 
 }
 
