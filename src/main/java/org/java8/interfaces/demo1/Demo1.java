@@ -1,4 +1,4 @@
-package org.java8.streams;
+package org.java8.interfaces.demo1;
 
 /**
  * Created by Mayank on 4/10/2016.
