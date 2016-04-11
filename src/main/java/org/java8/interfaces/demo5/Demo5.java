@@ -1,5 +1,6 @@
 package org.java8.interfaces.demo5;
 
+import org.java8.datamodel.employee.Employee;
 import java.util.function.Predicate;
 
 /**
@@ -34,29 +35,3 @@ public class Demo5 {
     }
 }
 
-class Employee {
-
-    int rating;
-    String id;
-
-    Employee(int rating, String id) {
-        this.rating = rating;
-        this.id = id;
-    }
-
-    public int getRating() {
-        return rating;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "rating=" + rating +
-                ", id='" + id + '\'' +
-                '}';
-    }
-}

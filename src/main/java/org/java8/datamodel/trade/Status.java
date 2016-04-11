@@ -1,4 +1,4 @@
-package org.java8.lambda;
+package org.java8.datamodel.trade;
 
 /**
  * Created by Mayank on 4/10/2016.

@@ -1,7 +1,7 @@
 package org.java8.lambda.demo5;
 
-import org.java8.lambda.Status;
-import org.java8.lambda.Trade;
+import org.java8.datamodel.trade.Status;
+import org.java8.datamodel.trade.Trade;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,6 +1,6 @@
 package org.java8.lambda.demo3;
 
-import org.java8.lambda.Trade;
+import org.java8.datamodel.trade.Trade;
 
 /**
  * Created by Mayank on 4/3/2016.
