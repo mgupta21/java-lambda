@@ -1,8 +1,8 @@
 package org.java8.lambda.demo6;
 
 import org.java8.datamodel.movie.Movie;
+import org.java8.util.MovieUtil;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -23,11 +23,7 @@ public class Demo6 {
         IMovie movieClassicLambda = Demo6::isClassic;
         IMovie movieComedyLambda = Demo6::isComedy;
 
-        List<Movie> movies = new ArrayList<>();
-        movies.add(new Movie(7, "DDLJ", false));
-        movies.add(new Movie(11, "KHNH", true));
-        movies.add(new Movie(3, "TITANIC", false));
-        movies.add(new Movie(123, "KNPH", false));
+        List<Movie> movies = MovieUtil.createMovies();
 
         movies.forEach(m -> {
             System.out.println("****\nMovie Name : " + m.getName());

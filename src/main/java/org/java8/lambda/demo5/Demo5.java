@@ -2,8 +2,8 @@ package org.java8.lambda.demo5;
 
 import org.java8.datamodel.trade.Status;
 import org.java8.datamodel.trade.Trade;
+import org.java8.util.TradeUtil;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -13,10 +13,7 @@ import java.util.List;
 public class Demo5 {
     public static void main(String[] args) {
 
-        List<Trade> trades = new ArrayList<>();
-        trades.add(new Trade("Google", 5000));
-        trades.add(new Trade("CME", 1000, Status.CLOSED));
-        trades.add(new Trade("Apple", 2450, Status.PENDING));
+        List<Trade> trades = TradeUtil.createTrades();
 
         trades.forEach(t -> {
             System.out.println("****\nTrade Name : " + t.getName()); // We can create another interface that has a method that returns String
