@@ -29,3 +29,18 @@ public class Demo3 {
         System.out.println(new Car().model());
     }
 }
+
+/*
+Notes : Abstract VS Interface Strategy
+
+1) Abstract
+- common functionality
+- related class groups
+- inherit state and behaviour
+
+2) Interface
+- multiple types
+- logic from many interfaces
+- inherit behaviour
+
+*/
