@@ -1,6 +1,7 @@
 package org.java8.interfaces.demo5;
 
 import org.java8.datamodel.employee.Employee;
+
 import java.util.function.Predicate;
 
 /**
@@ -21,8 +22,8 @@ public class Demo5 {
         Predicate<Employee> bonusLambda = (emp) -> emp.getRating() < 10 ? true : false;
         Predicate<Employee> execLambda = (emp) -> emp.getId().startsWith("E9") ? true : false;
 
-        Employee empA = new Employee(54, "E939379");
-        Employee empB = new Employee(3, "H9738378");
+        Employee empA = new Employee("E939379", 54);
+        Employee empB = new Employee("H9738378", 3);
 
         System.out.println("\n" + empA.toString());
         System.out.println("Is eligible for bonus ? : " + bonusLambda.test(empA));
