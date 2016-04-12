@@ -17,6 +17,8 @@ public class TradeUtil {
         trades.add(new Trade("APPLE", 1000, Status.PENDING));
         trades.add(new Trade("AMAZON", 2450, Status.OPEN));
         trades.add(new Trade("IBM", 100, Status.CLOSED));
+        trades.add(new Trade("MICROSOFT", 1500, Status.CANCELED));
+        trades.add(new Trade("BMW", 10000, Status.OPEN));
         return trades;
     }
 
