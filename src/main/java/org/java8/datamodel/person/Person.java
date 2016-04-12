@@ -1,4 +1,4 @@
-package org.java8.streams;
+package org.java8.datamodel.person;
 
 /**
  * Created by Mayank on 2/6/2016.
@@ -9,11 +9,11 @@ public class Person {
     int age;
 
 
-    public Person(String firstName){
+    public Person(String firstName) {
         this.firstName = firstName;
     }
 
-    public Person(String firstName, String lastName){
+    public Person(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
