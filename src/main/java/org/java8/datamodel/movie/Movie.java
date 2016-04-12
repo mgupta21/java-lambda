@@ -7,16 +7,22 @@ public class Movie {
 
     int rank;
     String name;
+    String director;
     boolean isComedy;
 
-    public Movie(int rank, String name, boolean isComedy) {
-        this.rank = rank;
-        this.name = name;
-        this.isComedy = isComedy;
+    public Movie(String name) {
+        this(name, "UNKNOWN");
     }
 
-    public Movie(String name) {
-        this(Integer.MAX_VALUE, name, false);
+    public Movie(String name, String director) {
+        this(name, director, Integer.MAX_VALUE, false);
+    }
+
+    public Movie(String name, String director, int rank, boolean isComedy) {
+        this.name = name;
+        this.director = director;
+        this.rank = rank;
+        this.isComedy = isComedy;
     }
 
     public int getRank() {
@@ -25,6 +31,10 @@ public class Movie {
 
     public String getName() {
         return name;
+    }
+
+    public String getDirector() {
+        return director;
     }
 
     public boolean isComedy() {
