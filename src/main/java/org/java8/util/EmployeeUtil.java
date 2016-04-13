@@ -1,6 +1,8 @@
 package org.java8.util;
 
+import org.java8.datamodel.employee.Department;
 import org.java8.datamodel.employee.Employee;
+import org.java8.datamodel.employee.Level;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,14 +16,16 @@ public class EmployeeUtil {
     // private Map<String, Employee> employeeMap = createEmployees().stream().collect(Collectors.toMap(createEmployees()))
 
     private static void initialize() {
-        // emploe
     }
 
     public static List<Employee> createEmployees() {
         List<Employee> employees = new ArrayList<>();
-        employees.add(new Employee("E568896", 3));
-        employees.add(new Employee("A539789", 5));
-        employees.add(new Employee("H297992", 2));
+        employees.add(new Employee("E568896", Department.ACCOUNTS, Level.INTERMEDIATE, 3));
+        employees.add(new Employee("A539789", Department.TECHNOLOGY, Level.JUNIOR, 5));
+        employees.add(new Employee("E839434", Department.ACCOUNTS, Level.SENIOR, 14));
+        employees.add(new Employee("H297992", Department.MARKETING, Level.SENIOR, 2));
+        employees.add(new Employee("E759380", Department.ACCOUNTS, Level.SENIOR, 11));
+        employees.add(new Employee("E208334", Department.FINANCE, Level.SENIOR, 9));
         return employees;
     }
 

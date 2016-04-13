@@ -7,10 +7,14 @@ public class Employee {
 
     int rating;
     String id;
+    Department department;
+    Level level;
 
-    public Employee(String id, int rating) {
+    public Employee(String empId, Department department, Level level, int rating) {
+        this.id = empId;
+        this.department = department;
+        this.level = level;
         this.rating = rating;
-        this.id = id;
     }
 
     public int getRating() {
@@ -19,6 +23,22 @@ public class Employee {
 
     public String getId() {
         return id;
+    }
+
+    public boolean isExecutive() {
+        return id.toLowerCase().contains("e");
+    }
+
+    public boolean isSenior() {
+        return level.equals(Level.SENIOR);
+    }
+
+    public Level getLevel() {
+        return level;
+    }
+
+    public Department getDepartment() {
+        return department;
     }
 
     @Override
