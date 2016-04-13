@@ -1,0 +1,6 @@
+>> Streams
+-  do not have any storage and they depend on source of data such as file, collection etc.
+-  are sequence of data
+-  internal iteration strategy : users never interact with iterations
+-  no storage so can represent infinite data
+-  dynamic computations
