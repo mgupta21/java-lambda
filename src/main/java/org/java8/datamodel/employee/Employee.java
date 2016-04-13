@@ -5,13 +5,15 @@ package org.java8.datamodel.employee;
  */
 public class Employee {
 
-    int rating;
     String id;
+    String name;
     Department department;
     Level level;
+    int rating;
 
-    public Employee(String empId, Department department, Level level, int rating) {
+    public Employee(String empId, String name, Department department, Level level, int rating) {
         this.id = empId;
+        this.name = name;
         this.department = department;
         this.level = level;
         this.rating = rating;
@@ -23,6 +25,10 @@ public class Employee {
 
     public String getId() {
         return id;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public boolean isExecutive() {

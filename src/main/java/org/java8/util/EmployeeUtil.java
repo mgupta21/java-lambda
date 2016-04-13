@@ -20,12 +20,12 @@ public class EmployeeUtil {
 
     public static List<Employee> createEmployees() {
         List<Employee> employees = new ArrayList<>();
-        employees.add(new Employee("E568896", Department.ACCOUNTS, Level.INTERMEDIATE, 3));
-        employees.add(new Employee("A539789", Department.TECHNOLOGY, Level.JUNIOR, 5));
-        employees.add(new Employee("E839434", Department.ACCOUNTS, Level.SENIOR, 14));
-        employees.add(new Employee("H297992", Department.MARKETING, Level.SENIOR, 2));
-        employees.add(new Employee("E759380", Department.ACCOUNTS, Level.SENIOR, 11));
-        employees.add(new Employee("E208334", Department.FINANCE, Level.SENIOR, 9));
+        employees.add(new Employee("E568896", "John Doe", Department.ACCOUNTS, Level.INTERMEDIATE, 3));
+        employees.add(new Employee("A539789", "Louis Pasteur", Department.TECHNOLOGY, Level.JUNIOR, 5));
+        employees.add(new Employee("E839434", "Rosa Parks", Department.ACCOUNTS, Level.SENIOR, 14));
+        employees.add(new Employee("H297992", "Oprah Winfrey", Department.MARKETING, Level.SENIOR, 2));
+        employees.add(new Employee("E759380", "Peter Sellers", Department.ACCOUNTS, Level.SENIOR, 11));
+        employees.add(new Employee("E208334", "Ernest Hemingway", Department.FINANCE, Level.SENIOR, 9));
         return employees;
     }
 

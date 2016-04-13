@@ -31,8 +31,8 @@ public class PredicateFunctions {
         LongSupplier longSupplier = () -> 5L;
 
         // Functions
-        Function<Integer, Employee> employeeFunction = x -> new Employee("E0000", Department.MARKETING, Level.SENIOR, x);
-        IntFunction<Employee> employeeIntFunction2 = x -> new Employee("E0000", Department.TECHNOLOGY, Level.INTERMEDIATE, x);
+        Function<Integer, Employee> employeeFunction = x -> new Employee("E0000", "John", Department.MARKETING, Level.SENIOR, x);
+        IntFunction<Employee> employeeIntFunction2 = x -> new Employee("E0000", "Mark", Department.TECHNOLOGY, Level.INTERMEDIATE, x);
 
         DoubleToIntFunction doubleToIntFunction = x -> (int) (x + 2);
         LongToDoubleFunction longToDoubleFunction = x -> (double) (x + x);
