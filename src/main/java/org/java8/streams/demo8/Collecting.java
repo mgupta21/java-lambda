@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 /**
  * Created by Mayank on 4/12/2016.
  */
-// Collector is an inteface and Collectors is a utility
+// Collector is an interface and Collectors is a utility
 public class Collecting {
 
     private static List<Trade> trades = TradeUtil.createTrades();
@@ -26,7 +26,6 @@ public class Collecting {
         Set<Trade> tradeSet = trades.stream()
                 .collect(Collectors.toSet());
         System.out.println(tradeSet);
-
     }
 
     private static void collectToMap() {
