@@ -19,6 +19,12 @@ public class Person {
         this.age = age;
     }
 
+    public Person(String fullName) {
+        String[] split = fullName.split(" ");
+        this.firstName = split[0];
+        this.lastName = split[1];
+    }
+
     public String getFirstName() {
         return firstName;
     }
