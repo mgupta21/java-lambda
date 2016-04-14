@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 public class App {
     public static void main(String[] args) {
 
-        List<Person> persons = Arrays.asList(new Person("Mayank", 23), new Person("John", 19), new Person("Chris", 15), new Person("Brian", 16));
+        List<Person> persons = Arrays.asList(new Person("Mayank", "G", 23), new Person("John", "M", 19), new Person("Chris", "L", 15), new Person("Brian", "D", 16));
 
         persons.forEach(p -> System.out.println(p));
         printLine();

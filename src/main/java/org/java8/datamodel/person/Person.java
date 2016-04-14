@@ -4,27 +4,27 @@ package org.java8.datamodel.person;
  * Created by Mayank on 2/6/2016.
  */
 public class Person {
-    String firstName;
-    String lastName;
-    int age;
 
-
-    public Person(String firstName) {
-        this.firstName = firstName;
-    }
+    private String firstName;
+    private String lastName;
+    private int age;
 
     public Person(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this(firstName, lastName, 0);
     }
 
-    public Person(String firstName, int age) {
+    public Person(String firstName, String lastName, int age) {
         this.firstName = firstName;
+        this.lastName = lastName;
         this.age = age;
     }
 
     public String getFirstName() {
         return firstName;
+    }
+
+    public boolean hasAge() {
+        return age != 0;
     }
 
     @Override
@@ -34,10 +34,6 @@ public class Person {
                 ", lastName='" + lastName + '\'' +
                 ", age=" + age +
                 '}';
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
     }
 
     public String getLastName() {

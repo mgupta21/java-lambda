@@ -34,7 +34,7 @@ public class Reducing {
         List<Integer> ints = Arrays.asList(11, 12, 13, 14);
 
         Optional<Integer> reducedOptionalSum = ints.stream().reduce((i, j) -> i + j);
-        // When we provide initial value, that possibility of null pointer disappears
+        // When we provide initial value, then possibility of null pointer disappears
         int reducedSum = ints.stream().reduce(10, (i, j) -> i + j);
 
         System.out.println("\nSum of arrays 1 : " + reducedOptionalSum.get());
