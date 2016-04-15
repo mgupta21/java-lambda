@@ -5,6 +5,7 @@ import org.java8.datamodel.trade.Trade;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.IntStream;
 
 /**
  * Created by Mayank on 4/10/2016.
@@ -19,6 +20,13 @@ public class TradeUtil {
         trades.add(new Trade("IBM", 100, Status.CLOSED));
         trades.add(new Trade("MICROSOFT", 1500, Status.CANCELED));
         trades.add(new Trade("BMW", 10000, Status.OPEN));
+        return trades;
+    }
+
+    public static List<Trade> createTrades(int numberOfTrades) {
+        List<Trade> trades = new ArrayList<>();
+        IntStream intStream = IntStream.rangeClosed(1, numberOfTrades);
+        intStream.forEach(i -> trades.add(new Trade("Dummy", i, Status.CANCELED)));
         return trades;
     }
 
